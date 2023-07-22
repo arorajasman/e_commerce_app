@@ -42,7 +42,7 @@ TextStyle getLightFontStyle({
 }
 
 // getting bold text style
-TextStyle getBOldFontStyle({
+TextStyle getBoldFontStyle({
   double fontSize = FontSize.s12,
   required Color color,
 }) {
@@ -50,6 +50,32 @@ TextStyle getBOldFontStyle({
     fontSize,
     FontConstants.fontFamily,
     FontWeightManger.bold,
+    color,
+  );
+}
+
+// getting semi bold text style
+TextStyle getSemiBoldFontStyle({
+  double fontSize = FontSize.s12,
+  required Color color,
+}) {
+  return _getTextStyle(
+    fontSize,
+    FontConstants.fontFamily,
+    FontWeightManger.semiBold,
+    color,
+  );
+}
+
+// getting medium text style
+TextStyle getMediumFontStyle({
+  double fontSize = FontSize.s12,
+  required Color color,
+}) {
+  return _getTextStyle(
+    fontSize,
+    FontConstants.fontFamily,
+    FontWeightManger.medium,
     color,
   );
 }
